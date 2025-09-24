@@ -17,11 +17,12 @@ int main(void)
     for (;;) {
         PORTA.OUTSET = LED_PA4;
         uart_print("test uart ABCDEFGHIJKLMNOPQRSTUVWXYZ\r\n");
-       _delay_ms(1000); //for (volatile uint32_t i=0; i< F_CPU/5; i++) { }  // ~0.2s crude delay
+       _delay_ms(1000); //for (volatile uint32_t i=0; i< F_CPU/5; i++) { } 
         PORTA.OUTCLR = LED_PA4;
        // for (volatile uint32_t i=0; i< F_CPU/5; i++) { }
           _delay_ms(1000); 
     }
 }
+
 
 
